@@ -1,24 +1,22 @@
 body {
-    background-color: #111;
+    background-color: #444;
     font-family: monospace;
 }
-
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #111;
-    border: 1px solid cyan;
+    background-color: rgba(0, 0, 0, .25);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius:5px;
   }
   
   li {
     float: left;
-    width: 20%;
   }
   
   li a {
@@ -28,11 +26,11 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
+    font-family: 'Poiret One Regular';
  
   }
   
   li a:hover {
-    background-color: aqua;
-    color: black;
+    color: goldenrod;
   }
 
