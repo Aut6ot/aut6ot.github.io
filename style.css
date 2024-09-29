@@ -1,36 +1,223 @@
+/* CUSTOM FONTS */
+@font-face {
+  font-family: Beyonders-Italic;
+  src: url(fonts/Beyonders-Italic.ttf);
+}
+
+@font-face{
+  font-family: TechnoSphere;
+  src: url(fonts/TechnoSphere.ttf);
+}
+
+@font-face{
+  font-family: Averox;
+  src: url(fonts/averox.ttf);
+}
+
+@font-face{
+  font-family: Exodar;
+  src: url(fonts/exodar.ttf);
+}
+
+@font-face{
+  font-family: Pineon;
+  src: url(fonts/PINEON.ttf);
+}
+
+@font-face{
+  font-family: Nebula-Hollow;
+  src: url(fonts/Nebula-Hollow.otf);
+}
+
+@font-face{
+  font-family: Nebula-Regular;
+  src: url(fonts/Nebula-Regular.otf);
+}
+
+@font-face{
+  font-family: Cargo-8th;
+  src: url(fonts/8th-Cargo.ttf);
+}
+
+@font-face{
+  font-family: Astera;
+  src: url(fonts/ASTERA.ttf);
+}
+
+@font-face{
+  font-family: M-Plus-Code;
+  src: url(fonts/M-Plus-Code.ttf);
+}
+
+@font-face{
+  font-family: Nexa-ExtraLight;
+  src: url(fonts/Nexa-ExtraLight.ttf);
+}
+
+@font-face{
+  font-family: Nexa-Heavy;
+  src: url(fonts/Nexa-Heavy.ttf);
+}
+
+@font-face{
+  font-family: LEMONMILK-LIGHT;
+  src: url(fonts/LEMONMILK-Light.otf);
+}
+
+/*
+h1{
+  font-family: TechnoSphere;
+  font-size: 64px;
+  background-image: url(images/metallic-holographic-iridescent-gradient-wallpaper-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+*/
+
+h1{
+  font-family: Beyonders-Italic;
+  font-size: 42px;
+  color: white;
+  letter-spacing:.15em;
+}
+
+
+/* MAIN CONTENT */
 body {
     background-color: #444;
     font-family: monospace;
+    color: white;
 }
 
+/* NAVBAR */
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
     background-color: rgba(0, 0, 0, .25);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius:5px;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Poiret One Regular';
- 
-  }
-  
-  li a:hover {
-    color: goldenrod;
-  }
+    box-shadow: 0 10px 10px #222;
+    width: 100%;
+}
 
+li {
+  float: left;
+  width: 20vw;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Technosphere';
+
+}
+
+.active{
+  background-color: #222;
+  color: linear-gradient(to right, rgb(209, 5, 107), rgb(37, 37, 216)); 
+}
+
+li a:hover {
+  background-color: #222;
+  text-decoration: underline overline;
+}
+
+/* MAIN DIV */
+.main {
+  margin: auto;
+  width: 90%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#index{
+  margin: auto;
+}
+
+.logo{
+  height: 75px;
+}
+
+::selection{
+  color: black;
+  background-color: white;
+}
+
+/* Project Page - Cards */
+
+
+
+#index-left{
+  text-align: left;
+  padding-top: 5%;
+  
+}
+
+.index-big1{
+  font-size: 90px;
+  font-family: Nexa-Heavy;
+  letter-spacing: .1em;
+}
+
+.index-big2{
+  font-size: 46px;
+  font-family: Nexa-ExtraLight;
+}
+
+/* PRESENTATIONS PAGE */
+.presentations{
+  text-align: left;
+  padding: 20px;
+  max-width: 1200px;
+  align-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.present-card{
+  display:block;
+  align-items:center;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #222;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 15px;
+  float:left;
+}
+
+.pcard-title {
+  font-size: 1.35em;
+  font-family: LEMONMILK-LIGHT;
+}
+
+.pcard-location {
+  font-size: 1em;
+  color: #AAA;
+  font-family: Nexa-ExtraLight;
+  font-style:italic;
+}
+
+.pcard-description {
+  font-size: 1.1em;
+  font-family: Nexa-ExtraLight;
+}
