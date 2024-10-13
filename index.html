@@ -1,31 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Autumn Gamache's Portfolio Website">
+    <title>Autumn Gamache</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
+    <!-- My Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <!-- Dot Navigation -->
+    <div class="dot-navbar">
+        <a href="#title" class="dot" id="dot-1"></a>
+        <a href="#skills" class="dot" id="dot-2"></a>
+        <a href="#research" class="dot" id="dot-3"></a>
+        <a href="#projects" class="dot" id="dot-4"></a>
+        <a href="#presentations" class="dot" id="dot-5"></a>
+        <a href="#about" class="dot" id="dot-6"></a>
+        <a href="#contact" class="dot" id="dot-7"></a>
+    </div>
 
-    <!-- Main Navbar -->
-    <ul>
-        <li><a class="active" href="index.html">home</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="research.html">RESEARCH</a></li>
-        <li><a href="presentations.html">PRESENTATIONS</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-    </ul>
-    
-    <div class="main">
-        <div id="index-left">
-            <h3 class="index-big2">Hello, my name is</h3>
-            <b><h2 class="index-big1">Autumn Gamache</h2></b>
-            <h3 class="index-big2">I'm a <span id="changing-word">student 📖, researcher 🔍,
-                club treasurer 🪙, programmer 🖥️, and artist 🎨.
-            </span></h3> 
 
+    <!-- Title Page -->
+    <div id="title" class="section container-fluid vh-100 d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="display-1">Autumn Gamache</h1>
+        <h2 class="display-6">Student in Computer Science</h2>
+    </div>
+
+    <!-- Skills (keep it to 10 or less!) -->
+    <div id="skills" class="section container-fluid bg-light vh-100 d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="display-2">Skills</h1>
+        <div class="container justify-content-center align-items-center">
+            <p>C++ | Gymnasium | NumPy | Pandas | Python | PyTorch | R | Scikit-Learn | Stable Baselines 3 | Tensorflow</p>
+            <br>
+            <div class="row align-items-center">
+                <div class="col">
+                    <img class="skill-img" src="images/skills/cpp.png" alt="c++ icon"/>
+                </div>
+                <div class="col">
+                    <img class="skill-img" src="images/skills/gymnasium_black.svg" alt="gymnasium icon"/>
+                </div>
+                <div class="col">
+                    <img class="skill-img" src="images/skills/numpy.png" alt="numpy icon"/>
+                </div>
+                <div class="col">
+                    <img class="skill-img" src="images/skills/pandas-code-logo.png" alt="pandas icon"/>
+                </div>
+                <div class="col">
+                    <img class="skill-img" src="images/skills/python.png" alt="python icon"/>
+                </div>
+            </div>
+            <br>
+            <div class="row align-items-center">
+                <div class="col">
+                    <img class="skill-img" src="images/skills/pytorch.png" alt="pytorch icon"/>
+                </div>
+                <div class="col">
+                    <img class="skill-img" src="images/skills/R-logo.png" alt="R language icon"/>
+                </div>
+                <div class="col">
+                    <img class="skill-img" src="images/skills/scikit-learn.png" alt="scikit-learn icon"/>
+                </div>
+                <div class="col">
+                    <img class="skill-img" src="images/skills/sb3.png" alt="Stable Baselines 3 icon"/>
+                </div>
+                <div class="col">
+                    <img class="skill-img" src="images/skills/tf-logo.png" alt="TensorFlow icon"/>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Research -->
+    <div id="research" class="section container-fluid bg-warning vh-100 text-center d-flex align-items-center">
+        <div class="row  w-100 d-flex align-items-center">
+            <div class="col-6 d-flexbox justify-content-center bg-primary">
+                <h1 class="display-1">Research</h1>
+                <h2 class="display-6">Teaching Drones to Fly</h2>
+            </div>
+
+            <div class="col-6 d-flexbox justify-content-center bg-success">
+                <h2>Teaching Drones to Fly</h2>
+                <p> Lorem Ipsum</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="mx-auto section container-fluid bg-dark vh-100 text-left d-flex flex-column align-items-center">
+        <h1 class="display-2 my-5">Projects</h1>
+        
+        <!-- ROW -->
+        <div class="row d-flex align-items-center gx-5">
+
+            <!-- Card 1 -->
+            <div class="col d-flex justify-content-center">
+                <div class="card align-items-center project-card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/projects/lunar-lander-pic.png"/>
+                    <div class="card-body">
+                        <h5 class="card-title">HuggingFace 🤗 Deep RL Course (RL Agents)</h5>
+                        <p class="card-text">Following this tutorial to further Reinforcement Learning skills.</p>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Card 2 -->
+            <div class="col d-flex justify-content-center">
+                <div class="card align-items-center project-card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/projects/healthfreaks-pic.png"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Health Freaks (App)</h5>
+                        <p class="card-text">Worked as a Front-End Developer on a health analytics app for my Software Engineering class.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col d-flex justify-content-center">
+                <div class="card align-items-center project-card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/orion-rover-smaller.png"/>
+                    <div class="card-body">
+                        <h5 class="card-title">NASA California Space Grant Consortium (Robot)</h5>
+                        <p class="card-text">Worked with a student team to design and prototype a lunar rover.</p>
+                    </div>
+                </div>
+            </div>
+            
+    
+        </div>
+        
+    </div>
+
+    <!-- Presentations -->
+    <div id="presentations" class="section container-fluid bg-light vh-100 text-left align-items-center">
+        <div class="text-center">
+            <h1 class="display-2 py-5">Presentations</h1>
+        </div>
+
+        <div class="row w-75 d-flex align-items-center mx-auto gy-3">
+            <div class="col-12 d-flex align-items-center p-2 present-card">
+                <img class="present-img" src="images/SCCUR-lttr-only-SQUARE.png"/>
+                <div class="d-flex flex-column px-3 my-2">
+                    <h5 class="card-title">Teaching Drones to Fly (SCCUR)</h5>
+                    <h6 class="card-subtitle">[Will present] at Southern California Conference for Undergraduate Research, Nov 2024</h6>
+                    <p class="card-desc">Will be presenting an updated poster detailing the additional progress made in the drone research. The audience will be student and faculty researchers, and all are coming from various Southern California universities.</p>
+                </div>
+            </div>
+            <div class="col-12 d-flex align-items-center p-2 present-card">
+                <img class="present-img" src="images/Crazyflie2.0-585px.jpg"/>
+                <div class="d-flex flex-column px-3 my-2">
+                    <h5 class="card-title">Teaching Drones to Fly</h5>
+                    <h6 class="card-subtitle">Presented at Summer Research Symposium @ CSU San Bernardino, Sept 2024</h6>
+                    <p class="card-desc">Presented my summer research progress & results. The audience consisted of the President of CSUSB, school administration, faculty, and students.</p>
+                </div>
+            </div>
+            <div class="col-12 d-flex align-items-center p-2 present-card">
+                <img class="present-img" src="images/drone-flight.gif"/>
+                <div class="d-flex flex-column px-3 my-2">
+                    <h5 class="card-title">eVTOL Research Progress</h5>
+                    <h6 class="card-subtitle">Presented at Supergroup Meeting @ CSU San Bernardino, July 2024</h6>
+                    <p class="card-desc">Covered progress on research efforts to the entire group of CREST-program summer researchers at CSUSB (~30 students & faculty). </p>
+                </div>
+            </div>
+            <div class="col-12 d-flex align-items-center p-2 present-card">
+                <img class="present-img" src="images/orion-rover-smaller.png"/>
+                <div class="d-flex flex-column px-3 my-2">
+                    <h5 class="card-title">Team Orion</h5>
+                    <h6 class="card-subtitle">Presented at California Space Grant Consortium Supergroup Event, August 2022</h6>
+                    <p class="card-desc">Presented our team’s prototype to the group and gave a demonstration of its functionality. Audience was the entire California Space Grant Consortium group (~150 students & faculty from various community colleges).</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+
+    <!-- About -->
+    <div id="about" class="section container-fluid bg-dark vh-100 text-center align-items-center">
+        <div class="text-center">
+            <h1 class="display-2 py-5">About</h1>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="section container-fluid bg-success vh-100 text-center align-items-center">
+        <div class="text-center">
+            <h1 class="display-2 py-5">Contact</h1>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- My JS -->
+    <script src="main.js"></script>
 </body>
+<footer>
+    <center>
+        <p>Site by Autumn Gamache</p>
+        <i><p>Credits can be found in the README</p></i>
+    </center>
+</footer>
 </html>

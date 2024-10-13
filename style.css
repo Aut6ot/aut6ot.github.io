@@ -63,3 +63,98 @@
   font-family: LEMONMILK-LIGHT;
   src: url(fonts/LEMONMILK-Light.otf);
 }
+
+body {
+  scroll-behavior:smooth;
+  background-color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+}
+
+/* Custom Cursor Highligh Color */
+::selection {
+  color: black;
+  background-color: lime;
+}
+
+/* === COLOR SCHEMES FOR SECTIONS === */
+#title{
+  color: white;
+  background-image: url(images/dark-forest.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+#projects{
+  color: white;
+  background-image: url(images/black-holog.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-blend-mode:color-dodge;
+}
+
+#about{
+  color: white;
+}
+
+/* Fixed Skill Icon Size */
+.skill-img {
+  width: 125px;
+  height: 125px;
+  border-radius: 15px;
+}
+
+/* === Dot Navbar === */
+.dot-navbar {
+  position: fixed;
+  top: 50%;
+  right: 5vw;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, .7);
+  border-radius: 50%;
+  display: block;
+  transition: background-color 0.3s;
+}
+.dot.active {
+  border: 4px solid white;
+}
+
+.card-img-top{
+  max-height:18rem;
+  max-width:18rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, .8);
+  filter:grayscale(70%) brightness(150%);
+}
+
+.project-card{
+  height:27rem;
+  background-color: rgba(255, 255, 255, .25);
+  backdrop-filter:blur(5px);
+  border-radius: 10px;
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.present-card{
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.present-img{
+  width:140px;
+  height:140px;
+  border-radius: 10px;
+}
