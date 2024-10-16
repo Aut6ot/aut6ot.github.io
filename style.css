@@ -70,23 +70,33 @@ body {
 }
 
 footer {
-  background-color: black;
+  background-color: #212529;
   color: white;
-  padding-top: 15px;
+  padding: 15px;
 }
 
 /* Custom Cursor Highligh Color */
 ::selection {
   color: black;
-  background-color: lime;
+  background-color: rgb(0, 255, 170);
 }
 
 /* === COLOR SCHEMES FOR SECTIONS === */
 #title{
   color: white;
-  background-image: url(images/dark-forest.jpg);
+  background-image: url(images/another-fuzzy-bkg-dark.png);
   background-repeat:no-repeat;
   background-size:cover;
+}
+
+#skills{
+  color: whitesmoke;
+  background-color: #212225;
+}
+
+#research{
+  color: whitesmoke;
+  background-image: url(images/split-bkg.png);
 }
 
 #projects{
@@ -97,8 +107,19 @@ footer {
   background-blend-mode:color-dodge;
 }
 
+#presentations{
+  color:#EEE;
+  background-color:#171718;
+}
+
 #about{
   color: white;
+  background-color: #212529;
+}
+
+#contact{
+  color: white;
+  background-color:#0b0b0f;
 }
 
 /* Fixed Skill Icon Size */
@@ -106,6 +127,7 @@ footer {
   width: 125px;
   height: 125px;
   border-radius: 15px;
+  filter:contrast(75%);
 }
 
 /* === Dot Navbar === */
@@ -141,20 +163,76 @@ footer {
 }
 
 .project-card{
-  height:27rem;
-  background-color: rgba(255, 255, 255, .25);
+  height:600px;
+  background-color: rgba(255, 255, 255, .1);
   backdrop-filter:blur(5px);
   border-radius: 10px;
   border: 2px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.project-card:hover{
+  background-color:rgba(100, 100, 100, .1);
+}
+
+.tag {
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background-color: rgba(255, 255, 255, .1);
+  backdrop-filter:blur(5px);
+  border-radius: 15px;
+  padding: 3px 7px;
+  display:flexbox;
+}
+
 .present-card{
   border-radius: 10px;
-  background-color: lightgray;
+  background-color: #2A2A2A;
+  border: 1px solid #999;
 }
 
 .present-img{
   width:140px;
   height:140px;
   border-radius: 10px;
+}
+
+.research-text{
+  font-size:1.5em;
+}
+
+.poster-btn{
+  width:fit-content;
+}
+
+#slim-div{
+  width:40%;
+}
+
+.contact-card{
+  width: 20%;
+  margin: auto;
+  background-color:#212529;
+  border: 1px solid #555555;
+}
+
+.social-links{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.social-links:hover{
+  filter:invert(25%);
+}
+
+.selfpic{
+  border-radius:200px;
+  border: 2px solid ghostwhite;
+  float:left;
+  margin-left:300px;
+  margin-right:100px;
+}
+
+.my-bio{
+  text-align:left;
+  padding-right:300px;
+  font-size:large;
 }
