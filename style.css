@@ -227,12 +227,9 @@ footer {
   border-radius:200px;
   border: 2px solid ghostwhite;
   float:left;
-  margin-left:300px;
-  margin-right:100px;
 }
 
 .my-bio{
   text-align:left;
-  padding-right:300px;
   font-size:large;
 }
