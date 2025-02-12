@@ -1,0 +1,54 @@
+/*==========
+CUSTOM FONTS
+===========*/
+@font-face{
+    font-family: "Lovers-Quarrel";
+    src: url("/fonts/Lovers-Quarrel.ttf");
+}
+
+@font-face{
+    font-family: "IMFellEnglishSC";
+    src: url("/fonts/IMFellEnglishSC.ttf");
+}
+/* ======================================================== */
+
+
+body{
+    color: white;
+    background-color: black;
+    font-family: "IMFellEnglishSC";
+    margin: 50px 50px;
+}
+
+h1{
+    font-family: "Lovers-Quarrel";
+    font-size: 7em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+::selection {
+    color: black;
+    background-color: white;
+}
+
+.fullpage{
+    width: 100%;
+    height: 100vh;
+}
+
+#home{
+    background-color: none;
+}
+
+#about{
+    background-color: none;
+}
+
+#contact{
+    background-color: none;
+
+}
+
