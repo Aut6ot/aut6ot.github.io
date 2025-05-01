@@ -1,0 +1,10 @@
+body{
+    color:antiquewhite;
+    background-color: black;
+    font-family: 'Trebuchet MS';
+}
+
+::selection{
+    background-color: aquamarine;
+    color: black;
+}
