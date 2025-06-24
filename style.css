@@ -8,3 +8,22 @@ body{
     background-color: aquamarine;
     color: black;
 }
+
+.container{
+    display: flexbox;
+    margin: 0 10vh;
+    justify-content: center;
+    border: 1px solid cyan;
+}
+
+.grid{
+    display: flex;
+    justify-content: space-around;
+}
+
+.item{
+    display: inline-flex;
+    flex-grow: 4;
+    flex-shrink: 2;
+    border: 1px solid purple;
+}
