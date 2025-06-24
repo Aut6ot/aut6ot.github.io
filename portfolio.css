@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Instrument-Sans;
+    src: url(assets/InstrumentSans-VariableFont_wdth\,wght.ttf);
+}
+
+body{
+    background-color: #1e1e1e;
+    color:ghostwhite;
+    margin: 0 auto;
+    padding-right: 50px;
+    font-family: Instrument-Sans;
+}
+
+#container{
+    margin: auto 5%;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+#title{
+    flex-direction: column;
+    h1{
+        font-size: 4em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+}
+
+#about{
+    flex-direction: column;
+    p{
+        font-size: 1.25em;
+    }
+}
+
+#projects{
+    flex-direction: column;
+}
+
+#project-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card{
+    border: 1px solid ghostwhite;
+    width: 15em;
+    height: fit-content;
+    display: flexbox;
+    padding: 0em 1.5em 1.5em 1.5em;
+    background-color: #333;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.card-img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.card-tag{
+    background-color:darkcyan;
+    display: inline-block;
+    border-radius: 25px;
+    margin: .2em .1em;
+    padding: .1em .5em;
+    width: fit-content;
+    word-break: keep-all;
+    font-size: small;
+}
+
+.card-tag:hover{
+    background-color:darkslategray;
+}
+
+#contact{
+    flex-direction: column;
+    gap: 3em;
+    
+}
+
+#contact-card{
+    flex-direction: row;
+    border: 1px solid ghostwhite;
+    display: flexbox;
+    background-color: #333;
+    width: max-content;
+    padding: 1em;
+    column-gap: 100px;
+}
+
+.contact_img{
+    height: 4em;
+    display: flex;
+    margin: 2em;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact_img:hover{
+    filter:brightness(50%);
+}
